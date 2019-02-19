@@ -1,0 +1,14 @@
+print("--"*40)
+carro = float(input("Valor do carro: R$"))
+salario = float(input("Salário do comprador: R$"))
+anos = int(input("Em quantos anos de financiamento?: "))
+parcela = carro / (anos * 12)
+print("--"*40)
+print(f"Para pagar um carro de R${carro: .2f} em {anos} anos")
+print(f"A prestação será de R${parcela: .2f} por mês")
+print("--"*40)
+if parcela > (salario * 0.3):
+    print(f"Financiamento negado o valor das parcelas excedeu 30% do salário!")
+else:
+    print("Empréstimo aprovado!")
+print("--"*40)
